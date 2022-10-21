@@ -31,15 +31,22 @@ This initializes and runs the API
   - This section creates users as a representation of the users schema. 
   - Users are defined as objects as opposed to a database. 
 
+# Conditions
+ - The user-entered source account and destination accounts are verified against the existing accounts prior to the transaction
+ - The account balance is ensured to always be above the entered transaction amount
+
+
 # Testing
  
 *Browsers can only make GET requests. Hence external softwares such as POSTMAN (in this application) is used to test the API by enlisting other requests such as POST*
  ![WhatsApp Image 2022-10-21 at 14 33 15](https://user-images.githubusercontent.com/116296589/197167613-554b75f4-9063-4302-b469-d199c22aaa85.jpg)
 
-Through POSTMAN, a POST request must be sent to the following URL in order to initialize a transaction
-  **http://localhost:5000/transaction**
+Through POSTMAN, a POST request must be sent to the following URL in order to initialize a transaction as per the above format in the image
+ - **http://localhost:5000/transaction**
 
 
 To view user accounts and transaction history (GET request)
 - **http://localhost:5000/transactionhistory** - To view transaction history
 - **http://localhost:5000/users** - To view avalable user accounts
+
+
