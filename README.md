@@ -51,7 +51,12 @@ To view user accounts and transaction history (GET request)
 - **http://localhost:5000/users** - To view avalable user accounts
 
 ***If a source account and/or destination accounts are not verified, the following response is generated***
+![src](https://user-images.githubusercontent.com/116296589/197173596-566b6300-5279-4bc1-87d1-1ed820d8be25.jpg)
+
+![dst](https://user-images.githubusercontent.com/116296589/197173665-b1e466da-c856-4de7-940a-47270b3238b7.jpg)
 
 ***If the transaction amount exceeds the source account balance, the following response is generated***
+![trns](https://user-images.githubusercontent.com/116296589/197173694-998c900c-c703-440f-a076-a9e7dd52d9fd.jpg)
+
 
 
