@@ -30,7 +30,16 @@ This initializes and runs the API
 ## models.js
   - This section creates users as a representation of the users schema. 
   - Users are defined as objects as opposed to a database. 
+
+# Testing
  
 *Browsers can only make GET requests. Hence external softwares such as POSTMAN (in this application) is used to test the API by enlisting other requests such as POST*
  ![WhatsApp Image 2022-10-21 at 14 33 15](https://user-images.githubusercontent.com/116296589/197167613-554b75f4-9063-4302-b469-d199c22aaa85.jpg)
 
+Through POSTMAN, a POST request must be sent to the following URL in order to initialize a transaction
+  **http://localhost:5000/transaction**
+
+
+To view user accounts and transaction history (GET request)
+- **http://localhost:5000/transactionhistory** - To view transaction history
+- **http://localhost:5000/users** - To view avalable user accounts
