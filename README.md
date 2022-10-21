@@ -30,10 +30,11 @@ This initializes and runs the API
 ## models.js
   - This section creates users as a representation of the users schema. 
   - Users are defined as objects as opposed to a database. 
+  - Users are pre-defined and can be manually added to this script
 
 # Conditions
  - The user-entered source account and destination accounts are verified against the existing accounts prior to the transaction
- - The account balance is ensured to always be above the entered transaction amount
+ - The source account balance is ensured to always be above the entered transaction amount
 
 
 # Testing
@@ -48,5 +49,9 @@ Through POSTMAN, a POST request must be sent to the following URL in order to in
 To view user accounts and transaction history (GET request)
 - **http://localhost:5000/transactionhistory** - To view transaction history
 - **http://localhost:5000/users** - To view avalable user accounts
+
+***If a source account and/or destination accounts are not verified, the following response is generated***
+
+***If the transaction amount exceeds the source account balance, the following response is generated***
 
 
